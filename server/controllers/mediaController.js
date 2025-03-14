@@ -39,7 +39,7 @@ export const getMediaByUser = async (req, res) => {
 
         // Find media documents uploaded by the provided user ID.
         // You can also sort them by creation date if needed.
-        const media = await Media.find({ uploadedBy: userId }).sort({ createdAt: -1 });
+        const media = await Media.find({ uploadedBy: userId, viewed: false }).sort({ createdAt: -1 });
 
         res.status(200).json({ success: true, media });
     } catch (error) {
