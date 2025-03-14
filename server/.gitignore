@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build output directories
+dist/
+build/
+out/
+
+# Environment files (do not commit your secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Vite cache (if using Vite)
+.vite/
+
+# Editor & IDE settings
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

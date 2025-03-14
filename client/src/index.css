@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@keyframes customSlideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes customFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-animate-slideInDown {
+  animation: customSlideInDown 1s ease-out forwards;
+}
+
+.custom-animate-fadeInUp {
+  animation: customFadeInUp 1s ease-out forwards;
+}
+
+/* Instead of using the combined selector, define a separate class for the delay */
+.custom-delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Tailwind’s animate-pulse class is built-in, but you can customize it here if desired */
