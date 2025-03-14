@@ -156,7 +156,6 @@ const UserMedia = () => {
                                 className="w-full h-auto object-contain rounded"
                             />
                         )}
-                        <p className="mt-4 text-gray-800 text-center">{selectedMedia.fileName}</p>
                         <div className="flex justify-center mt-4 space-x-4">
                             <button
                                 onClick={handleCloseModal}
