@@ -186,7 +186,8 @@ const Home = () => {
             <div className="flex flex-col flex-grow">
                 {/* Header */}
                 <header className="bg-white shadow p-4 flex items-center justify-between md:justify-start">
-                    <button onClick={toggleSidebar} className="md:hidden mr-4 transform transition duration-300 hover:rotate-90">
+                    <button onClick={toggleSidebar} className="md:hidden mr-4 transform transition duration-300 hover:rotate-90"> 
+                        
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
